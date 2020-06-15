@@ -1,0 +1,37 @@
+{
+  "name": "interceptor-f",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "micro -p 8000",
+    "lint": "xo",
+    "test": "npm run lint && ava",
+    "auto": "git add . && git commit -mAUTOCOMMIT && git push origin master"
+  },
+  "xo": {
+    "extends": "prettier"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^7.4.1",
+    "micro": "latest",
+    "micro-cors": "^0.0.4",
+    "microrouter": "^2.1.1",
+    "mongodb": "^2.2.27",
+    "nodemon": "^1.11.0",
+    "uuid": "^3.0.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "request-promise": "^4.2.1",
+    "test-listen": "^1.0.2",
+    "xo": "^0.18.1"
+  }
+}
